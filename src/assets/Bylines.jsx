@@ -98,7 +98,7 @@ export default function Bylines() {
       </nav>
 
         {/* Main Content Container */}
-        <div style={{
+        <div className="main-content-container" style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
@@ -124,31 +124,30 @@ export default function Bylines() {
 
         {/* Clickable Category Filters */}
         <div style={{
-          fontSize: '16px',
-          fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-          color: '#3E0230',
-          fontWeight: 'normal',
-          marginBottom: '3rem'
-        }}>
-          (plus!) 
-          {categories.map((category, index) => (
-            <React.Fragment key={category}>
-              <span 
-                style={{
-                  cursor: 'pointer',
-                  fontWeight: selectedCategory === category ? 'bold' : 'normal',
-                  textDecoration: 'none',
-                  color: '#3E0230'
-                }}
-                onClick={() => setSelectedCategory(category)}
-                onMouseOver={(e) => e.target.style.fontWeight = 'bold'}
-                onMouseOut={(e) => e.target.style.fontWeight = selectedCategory === category ? 'bold' : 'normal'}
-              >
-                ✶ {category + ' '} 
-              </span>
-            </React.Fragment>
-          ))}
-        </div>
+           fontSize: '16px',
+           fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+           color: '#3E0230',
+           fontWeight: 'normal',
+           marginBottom: '3rem'
+         }}>
+           {categories.map((category, index) => (
+             <React.Fragment key={category}>
+               <span 
+                 style={{
+                   cursor: 'pointer',
+                   fontWeight: selectedCategory === category ? 'bold' : 'normal',
+                   textDecoration: 'none',
+                   color: '#3E0230'
+                 }}
+                 onClick={() => setSelectedCategory(category)}
+                 onMouseOver={(e) => e.target.style.fontWeight = 'bold'}
+                 onMouseOut={(e) => e.target.style.fontWeight = selectedCategory === category ? 'bold' : 'normal'}
+               >
+                 ✶ {category + ' '} 
+               </span>
+             </React.Fragment>
+           ))}
+         </div>
 
         {/* Render content based on selected category */}
         {Object.entries(currentContent)
@@ -217,10 +216,10 @@ export default function Bylines() {
             justify-content: center !important;
             margin-bottom: 2rem !important;
             }
-            .main-content {
+            .main-content-container {
             padding-left: 1rem !important;
             }
-            .main-title {
+            h1 {
             font-size: 50px !important;
             }
         }
