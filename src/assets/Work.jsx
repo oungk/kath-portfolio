@@ -26,18 +26,18 @@ export default function Work() {
         <a href="#" style={{color: '#3E0230', textDecoration: 'none', fontWeight: 'normal'}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' })); }}>contact me</a>
       </nav>
 
-        {/* Main Content Container */}
-        <div className="main-content-container" style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        justifyContent: 'center',
-        minHeight: '100vh',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        padding: '0 1rem',
-        paddingLeft: '4rem'
-      }}>
+      {/* Main Content Container */}
+      <div className="main-content-container" style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'center',
+      minHeight: '100vh',
+      maxWidth: '1200px',
+      margin: '0 auto',
+      padding: '0 1rem',
+      paddingLeft: '4rem'
+    }}>
         {/* Main Title */}
         <h1 style={{
           fontSize: '70px',
@@ -207,8 +207,8 @@ export default function Work() {
         </div>
       </div>
 
-                       {/* Mobile Responsive Styles */}
-                       <style>{`
+      {/* Mobile Responsive Styles */}
+      <style>{`
         em {
             color: #3E0230 !important;
             font-style: italic;

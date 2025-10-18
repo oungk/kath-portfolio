@@ -17,10 +17,6 @@ function App() {
     return () => window.removeEventListener('navigate', handleNavigate)
   }, [])
 
-  const handleNavClick = (page) => {
-    setCurrentPage(page)
-  }
-
   const renderPage = () => {
     switch (currentPage) {
       case 'work':
@@ -41,4 +37,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
