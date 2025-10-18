@@ -37,28 +37,34 @@ export default function Bylines() {
     photography: {
       2024: [
         { text: '"Snõõper\'s convergence of puppets and punk"', link: 'https://nobells.blog/snooper-band-interview/', publication: 'No Bells Magazine' },
-        { text: '"IN PHOTOS: Ryan Beatty takes it slow at the Basement East"', publication: 'The Vanderbilt Hustler' },
-        { text: '"Waxahatchee\'s meditative nostalgia"', publication: 'The Vanderbilt Hustler' },
-        { text: '"Mother Cain embraces her found family at The Basement East"', publication: 'The Vanderbilt Hustler' }
+        { text: '"IN PHOTOS: Ryan Beatty takes it slow at the Basement East"', link: 'https://vanderbilthustler.com/2024/02/23/in-photos-ryan-beatty-takes-it-slow-at-the-basement-east/', publication: 'The Vanderbilt Hustler' },
+        { text: '"Waxahatchee\'s meditative nostalgia"', link:'https://vanderbilthustler.com/2024/05/08/waxahatchees-meditative-nostalgia/#', publication: 'The Vanderbilt Hustler' },
+      ],
+      2023: [
+        { text: '"Mother Cain embraces her found family at The Basement East"', link: 'https://vanderbilthustler.com/2022/09/12/mother-cain-embraces-her-found-family-at-the-basement-east/#',publication: 'The Vanderbilt Hustler' }
       ]
     },
     audio: {
-      2024: [
-        { text: '"Podcast: Music Industry Deep Dive"', publication: 'Audio Magazine' },
-        { text: '"Sound Design for Interactive Stories"', publication: 'Audio Weekly' }
+      2023: [
+        { text: '"Potential for hazmat transport accidents higher in low income areas in Midwest"', link: 'https://www.ideastream.org/2023-10-02/potential-for-hazmat-transport-accidents-higher-in-low-income-areas-in-midwest', publication: 'WYSO' },
+      ],
+      2020: [
+        { text: '"How 2020 Changed Us"', link: 'https://podcasts.apple.com/us/podcast/how-2020-changed-us/id1346207297?i=1000503826209', publication: 'Today, Explained' }
       ]
     },
     video: {
-      2024: [
-        { text: '"Documentary: Nashville Music Scene"', publication: 'Video Journal' },
-        { text: '"Interactive Video: Election Results"', publication: 'The New York Times' }
+      2025: [
+        { text: '"Sham Jam 2025 Spotlight: McKay In-Studio"', link: 'https://wrvu.org/sham-jam-2025-spotlight-mckay-in-studio/', publication: 'WRVU' },
+      ],
+      2020: [
+        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times', year: '2020' },
       ]
     },
     poetry: {
       2025: [
-        { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (2025 - forthcoming)' },
-        { text: '"PRAYER TO SAINT MICHAEL"', publication: 'Dishsoap Quarterly (2025)' },
-        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', publication: 'Sine Theta Magazine (2025)' }
+        { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (forthcoming)' },
+        { text: '"PRAYER TO SAINT MICHAEL"', link: 'https://dishsoap-quarterly.com/5-20-25/prayer/', publication: 'Dishsoap Quarterly' },
+        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://sinetheta.net/34.html',publication: 'Sine Theta Magazine' }
       ]
     }
   };
@@ -91,12 +97,12 @@ export default function Bylines() {
         <a href="#" style={{color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' })); }}>contact me</a>
       </nav>
 
-      {/* Main Content Container */}
-      <div style={{
+        {/* Main Content Container */}
+        <div style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         minHeight: '100vh',
         maxWidth: '1200px',
         margin: '0 auto',
