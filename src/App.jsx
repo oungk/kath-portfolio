@@ -2,6 +2,7 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import Home from './assets/Home'
 import Work from './assets/Work'
+import Contact from './assets/Contact'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -23,10 +24,10 @@ function App() {
     switch (currentPage) {
       case 'work':
         return <Work />
+      case 'contact':
+        return <Contact />
       case 'bylines':
         return <div style={{minHeight: '100vh', backgroundColor: '#3E0230', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}}>Bylines page coming soon...</div>
-      case 'contact':
-        return <div style={{minHeight: '100vh', backgroundColor: '#3E0230', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}}>Contact page coming soon...</div>
       default:
         return <Home />
     }
