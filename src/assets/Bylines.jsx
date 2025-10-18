@@ -63,8 +63,9 @@ export default function Bylines() {
     poetry: {
       2025: [
         { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (forthcoming)' },
+        { text: '"Hit and Run"', link: 'https://www.fourteenpoems.com/shop/issue-17', publication: 'fourteen poems (print)' },
         { text: '"PRAYER TO SAINT MICHAEL"', link: 'https://dishsoap-quarterly.com/5-20-25/prayer/', publication: 'Dishsoap Quarterly' },
-        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://sinetheta.net/34.html',publication: 'Sine Theta Magazine' }
+        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://sinetheta.net/34.html',publication: 'Sine Theta Magazine (print)' }
       ]
     }
   };
