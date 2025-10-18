@@ -36,7 +36,8 @@ export default function Work() {
       maxWidth: '1200px',
       margin: '0 auto',
       padding: '0 1rem',
-      paddingLeft: '4rem'
+      paddingLeft: '4rem',
+      paddingTop: '4rem'
     }}>
         {/* Main Title */}
         <h1 style={{

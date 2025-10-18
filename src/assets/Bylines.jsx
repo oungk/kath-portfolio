@@ -99,16 +99,16 @@ export default function Bylines() {
 
         {/* Main Content Container */}
         <div className="main-content-container" style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-        minHeight: '100vh',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        padding: '0 1rem',
-        paddingLeft: '4rem',
-        paddingTop: '4rem'
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          justifyContent: 'center',
+          minHeight: '100vh',
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 1rem',
+          paddingLeft: '4rem',
+          paddingTop: '4rem'
       }}>
         {/* Main Title */}
         <h1 style={{
