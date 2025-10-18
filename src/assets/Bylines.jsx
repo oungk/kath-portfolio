@@ -220,7 +220,7 @@ export default function Bylines() {
             padding-left: 1rem !important;
             }
             h1 {
-            font-size: 50px !important;
+            font-size: 40px !important;
             }
         }
       `}</style>
