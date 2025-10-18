@@ -1,6 +1,71 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Bylines() {
+  const [selectedCategory, setSelectedCategory] = useState('journalism');
+
+  // Define different content sets for each category
+  const contentByCategory = {
+    journalism: {
+      2025: [
+        { text: '"An Extremely Detailed Map of the 2024 Election"', link: 'https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html?unlocked_article_code=1.uU8.dpPv._nJFbFUWhO8O&smid=url-share', publication: 'The New York Times' },
+        { text: '"Country Almanac: Artists to Watch"', link: 'https://www.nashvillescene.com/music/coverstory/nashville-scene-country-almanac-artists-watch-wyatt-flores/article_c1eb8f7a-d2ac-11ef-927b-cf3f88063466.html', publication: 'Nashville Scene' }
+      ],
+      2024: [
+        { text: '"Snõõper\'s convergence of puppets and punk"', link: 'https://nobells.blog/snooper-band-interview/', publication: 'No Bells Magazine' },
+        { text: '"Inside Palestine\'s last keffiyeh factory"', link: 'https://atmos.earth/fashion-and-design/inside-palestines-hirbawi-keffiyeh-factory/', publication: 'Atmos Magazine' },
+        { text: '"Dear Nora and Cassie Berman play for friends old, new and gone"', link: 'https://www.nashvillescene.com/music/thespin/dear-nora-and-cassie-berman-play-for-friends-old-new-and-gone/article_706d0cc8-f5d0-11ee-9d5b-6b73679b47b4.html', publication: 'Nashville Scene' },
+        { text: '"Budge just wants to have fun"', link: 'https://www.nashvillescene.com/music/features/budge-hrtstrngs-nashville-music-interview/article_945c75aa-1a1b-11ef-8cb5-e32eafe41d6f.html', publication: 'Nashville Scene' },
+        { text: '"Another Look: Rap Ferreira"', link: 'https://www.nashvillescene.com/music/features/nashville-music-recommendations-brittany-howard-rap-ferreira/article_f3fe4cee-d5a7-11ee-b2a9-1b523036a447.html', publication: 'Nashville Scene' },
+        { text: '"Waxahatchee, MJ Lenderman and More Celebrate ANTI- Records\' Americanafest"', link: 'https://www.nashvillescene.com/music/thespin/americanafest-2024-waxahatchee-basement-east/article_c5f647e6-776b-11ef-9747-0f6fe5c61a94.html', publication: 'Nashville Scene' },
+        { text: '"Opinion | Free Speech Is for Campus Reporters Too"', link: 'https://www.wsj.com/opinion/free-speech-vanderbilt-campus-paper-journalism-7eb17db4?gaa_at=eafs&gaa_n=AWEtsqf28CGqsR____UDu1-plHpy0DjeQWKdKtvK14LV1EYlD1d4fuLZiJX4hz3ndtI%3D&gaa_ts=68f31945&gaa_sig=ehNtvryB2_Lt-0Qw8urV9z63n0j-joH6ziwDjW-kgqrnGieyNIWq3cWySylJx1WqNMX5wkTGnZBE70vWWhddAQ%3D%3D', publication: 'The Wall Street Journal' },
+        { text: '"The NYT\'s \'Needle\' Presidential Forecast"', link: 'https://www.nytimes.com/interactive/2024/11/05/us/elections/results-president-forecast-needle.html', publication: 'The New York Times' }
+      ],
+      2023: [
+        { text: '"Huge amounts of hazardous materials pass through the Midwest every day. How safe are you?"', link: 'https://www.indystar.com/story/news/environment/2023/07/25/midwest-states-in-top-20-for-hazmat-transportation-accidents/70337547007/', publication: 'IndyStar' },
+        { text: '"Queering the Map is a crowdsourced archive of queer memories"', link: 'https://www.nytimes.com/2023/06/25/style/queering-the-map-lucas-larochelle.html', publication: 'The New York Times' },
+        { text: '"Tree Ninja cultivates a forest in Nashville\'s neighborhoods"', link: 'https://www.nashvillescene.com/news/citylimits/tree-ninja-cultivates-a-forest-in-nashville-s-neighborhoods/article_737ae7fc-fefd-11ed-a0ec-07bb4b1cdc5f.html', publication: 'Nashville Scene' }
+      ],
+      earlier: [
+        { text: '"The two young women behind Diversify Our Narrative"', publication: 'Ms. Magazine (print)', year: '2021' },
+        { text: '"What is a community fridge? How they work, explained."', link: 'https://www.vox.com/the-goods/22285863/community-fridges-neighborhoods-free-food', publication: 'Vox', year: '2021' },
+        { text: '"The best $96 I ever spent: A Keurig to show my mom I love her"', link: 'https://www.vox.com/the-goods/21443775/best-money-chinese-mom-i-love-you', publication: 'Vox', year: '2020' },
+        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times', year: '2020' },
+        { text: '"These Asian American Women Should be in Every History Book"', link: 'https://www.teenvogue.com/story/4-asian-american-women-who-changed-history', publication: 'Teen Vogue', year: '2020' },
+        { text: '"Meet the teen feminist leading the fight for young women\'s reproductive rights"', link: 'https://msmagazine.com/2019/07/25/fierce-teen-ally-leads-girls-of-color-in-fight-for-reproductive-rights/', publication: 'Ms. Magazine', year: '2019' }
+      ]
+    },
+    photography: {
+      2024: [
+        { text: '"Snõõper\'s convergence of puppets and punk"', link: 'https://nobells.blog/snooper-band-interview/', publication: 'No Bells Magazine' },
+        { text: '"IN PHOTOS: Ryan Beatty takes it slow at the Basement East"', publication: 'The Vanderbilt Hustler' },
+        { text: '"Waxahatchee\'s meditative nostalgia"', publication: 'The Vanderbilt Hustler' },
+        { text: '"Mother Cain embraces her found family at The Basement East"', publication: 'The Vanderbilt Hustler' }
+      ]
+    },
+    audio: {
+      2024: [
+        { text: '"Podcast: Music Industry Deep Dive"', publication: 'Audio Magazine' },
+        { text: '"Sound Design for Interactive Stories"', publication: 'Audio Weekly' }
+      ]
+    },
+    video: {
+      2024: [
+        { text: '"Documentary: Nashville Music Scene"', publication: 'Video Journal' },
+        { text: '"Interactive Video: Election Results"', publication: 'The New York Times' }
+      ]
+    },
+    poetry: {
+      2025: [
+        { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (2025 - forthcoming)' },
+        { text: '"PRAYER TO SAINT MICHAEL"', publication: 'Dishsoap Quarterly (2025)' },
+        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', publication: 'Sine Theta Magazine (2025)' }
+      ]
+    }
+  };
+
+  const categories = ['journalism', 'photography', 'audio', 'video', 'poetry'];
+  const currentContent = contentByCategory[selectedCategory] || {};
+
   return (
     <div style={{
       minHeight: '100vh',
@@ -26,8 +91,8 @@ export default function Bylines() {
         <a href="#" style={{color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' })); }}>contact me</a>
       </nav>
 
-       {/* Main Content Container */}
-       <div style={{
+      {/* Main Content Container */}
+      <div style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
@@ -51,265 +116,83 @@ export default function Bylines() {
           What I've made...
         </h1>
 
-        {/* Sub-heading */}
-        <div className="subtitle" style={{
-        fontSize: '16px',
-        fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-        color: '#3E0230',
-        fontWeight: 'normal',
-        marginBottom: '3rem'
+        {/* Clickable Category Filters */}
+        <div style={{
+          fontSize: '16px',
+          fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+          color: '#3E0230',
+          fontWeight: 'normal',
+          marginBottom: '3rem'
         }}>
-        (plus!) * photography * video * audio * poetry
+          (plus!) 
+          {categories.map((category, index) => (
+            <React.Fragment key={category}>
+              <span 
+                style={{
+                  cursor: 'pointer',
+                  fontWeight: selectedCategory === category ? 'bold' : 'normal',
+                  textDecoration: 'none',
+                  color: '#3E0230'
+                }}
+                onClick={() => setSelectedCategory(category)}
+                onMouseOver={(e) => e.target.style.fontWeight = 'bold'}
+                onMouseOut={(e) => e.target.style.fontWeight = selectedCategory === category ? 'bold' : 'normal'}
+              >
+                ✶ {category + ' '} 
+              </span>
+            </React.Fragment>
+          ))}
         </div>
 
-        {/* 2025 Section */}
-        <div style={{ marginBottom: '2rem' }}>
-          <h2 style={{
-            fontSize: '16px',
-            fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-            color: '#3E0230',
-            fontWeight: 'bold',
-            margin: '0 0 1rem 0'
-          }}>
-            2025
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{
+        {/* Render content based on selected category */}
+        {Object.entries(currentContent)
+          .sort(([a], [b]) => {
+            // Sort years in descending order (newest first)
+            if (a === 'earlier') return 1;
+            if (b === 'earlier') return -1;
+            return parseInt(b) - parseInt(a);
+          })
+          .map(([year, items]) => (
+          <div key={year} style={{ marginBottom: '2rem' }}>
+            <h2 style={{
               fontSize: '16px',
               fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
               color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
+              fontWeight: 'bold',
+              margin: '0 0 1rem 0'
             }}>
-              - <a href="https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html?unlocked_article_code=1.uU8.dpPv._nJFbFUWhO8O&smid=url-share" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"An Extremely Detailed Map of the 2024 Election"</a> <em>The New York Times</em>
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
+              {year}
+            </h2>
+            <ul style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: 0
             }}>
-              - <a href="https://www.nashvillescene.com/music/coverstory/nashville-scene-country-almanac-artists-watch-wyatt-flores/article_c1eb8f7a-d2ac-11ef-927b-cf3f88063466.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Country Almanac: Artists to Watch"</a> <em>Nashville Scene</em>
-            </li>
-          </ul>
-        </div>
-
-        {/* 2024 Section */}
-        <div style={{ marginBottom: '2rem' }}>
-          <h2 style={{
-            fontSize: '16px',
-            fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-            color: '#3E0230',
-            fontWeight: 'bold',
-            margin: '0 0 1rem 0'
-          }}>
-            2024
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://nobells.blog/snooper-band-interview/" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Snõõper's convergence of puppets and punk"</a> <em>No Bells Magazine</em> w/Ben Arthur
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://atmos.earth/fashion-and-design/inside-palestines-hirbawi-keffiyeh-factory/" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Inside Palestine's last keffiyeh factory"</a> <em>Atmos Magazine</em>
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.nashvillescene.com/music/thespin/dear-nora-and-cassie-berman-play-for-friends-old-new-and-gone/article_706d0cc8-f5d0-11ee-9d5b-6b73679b47b4.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Dear Nora and Cassie Berman play for friends old, new and gone"</a> <em>Nashville Scene</em>            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.nashvillescene.com/music/features/budge-hrtstrngs-nashville-music-interview/article_945c75aa-1a1b-11ef-8cb5-e32eafe41d6f.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Budge just wants to have fun"</a> <em>Nashville Scene</em></li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.nashvillescene.com/music/features/nashville-music-recommendations-brittany-howard-rap-ferreira/article_f3fe4cee-d5a7-11ee-b2a9-1b523036a447.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Another Look: Rap Ferreira"</a> <em>Nashville Scene</em>
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-            - <a href="https://www.nashvillescene.com/music/thespin/americanafest-2024-waxahatchee-basement-east/article_c5f647e6-776b-11ef-9747-0f6fe5c61a94.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Waxahatchee, MJ Lenderman and More Celebrate ANTI- Records’ Americanafest"</a> <em>Nashville Scene</em>
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-            - <a href="https://www.wsj.com/opinion/free-speech-vanderbilt-campus-paper-journalism-7eb17db4?gaa_at=eafs&gaa_n=AWEtsqf28CGqsR____UDu1-plHpy0DjeQWKdKtvK14LV1EYlD1d4fuLZiJX4hz3ndtI%3D&gaa_ts=68f31945&gaa_sig=ehNtvryB2_Lt-0Qw8urV9z63n0j-joH6ziwDjW-kgqrnGieyNIWq3cWySylJx1WqNMX5wkTGnZBE70vWWhddAQ%3D%3D" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Opinion | Free Speech Is for Campus Reporters Too"</a> <em>The Wall Street Journal</em>
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.nytimes.com/interactive/2024/11/05/us/elections/results-president-forecast-needle.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"The NYT’s ‘Needle’ Presidential Forecast"</a> <em>The New York Times</em>
-            </li>
-          </ul>
-        </div>
-
-        {/* 2023 Section */}
-        <div style={{ marginBottom: '2rem' }}>
-          <h2 style={{
-            fontSize: '16px',
-            fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-            color: '#3E0230',
-            fontWeight: 'bold',
-            margin: '0 0 1rem 0'
-          }}>
-            2023
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.indystar.com/story/news/environment/2023/07/25/midwest-states-in-top-20-for-hazmat-transportation-accidents/70337547007/" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Huge amounts of hazardous materials pass through the Midwest every day. How safe are you?"</a> <em>IndyStar</em>
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.nytimes.com/2023/06/25/style/queering-the-map-lucas-larochelle.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Queering the Map is a crowdsourced archive of queer memories"</a> <em>The New York Times</em>
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.nashvillescene.com/news/citylimits/tree-ninja-cultivates-a-forest-in-nashville-s-neighborhoods/article_737ae7fc-fefd-11ed-a0ec-07bb4b1cdc5f.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Tree Ninja cultivates a forest in Nashville's neighborhoods"</a> <em>Nashville Scene</em>
-            </li>
-          </ul>
-        </div>
-
-        {/* Earlier Section */}
-        <div style={{ marginBottom: '2rem' }}>
-          <h2 style={{
-            fontSize: '16px',
-            fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-            color: '#3E0230',
-            fontWeight: 'bold',
-            margin: '0 0 1rem 0'
-          }}>
-            earlier
-          </h2>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - "The two young women behind Diversify Our Narrative" <em>Ms. Magazine (print)</em> (2021)
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.vox.com/the-goods/22285863/community-fridges-neighborhoods-free-food" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"What is a community fridge? How they work, explained."</a> <em>Vox</em> (2021)
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.vox.com/the-goods/21443775/best-money-chinese-mom-i-love-you" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"The best $96 I ever spent: A Keurig to show my mom I love her"</a> <em>Vox</em> (2020)
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Opinion | Coronavirus Racism Infected My High School"</a> <em>The New York Times</em> (2020)
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://www.teenvogue.com/story/4-asian-american-women-who-changed-history" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"These Asian American Women Should be in Every History Book"</a> <em>Teen Vogue</em> (2020)
-            </li>
-            <li style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'normal',
-              marginBottom: '0.5rem'
-            }}>
-              - <a href="https://msmagazine.com/2019/07/25/fierce-teen-ally-leads-girls-of-color-in-fight-for-reproductive-rights/" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Meet the teen feminist leading the fight for young women's reproductive rights"</a> <em>Ms. Magazine</em> (2019)
-            </li>
-          </ul>
-        </div>
+              {items.map((item, index) => (
+                <li key={index} style={{
+                  fontSize: '16px',
+                  fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+                  color: '#3E0230',
+                  fontWeight: 'normal',
+                  marginBottom: '0.5rem'
+                }}>
+                  - {item.link ? (
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>
+                      {item.text}
+                    </a>
+                  ) : (
+                    item.text
+                  )} <em>{item.publication}</em>
+                  {item.year && ` (${item.year})`}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
       {/* Mobile Responsive Styles */}
-        <style>{`
+      <style>{`
         em {
             color: #3E0230 !important;
             font-style: italic;
@@ -335,7 +218,7 @@ export default function Bylines() {
             font-size: 50px !important;
             }
         }
-        `}</style>
+      `}</style>
     </div>
   );
 }
