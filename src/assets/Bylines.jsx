@@ -26,12 +26,12 @@ export default function Bylines() {
         { text: '"Tree Ninja cultivates a forest in Nashville\'s neighborhoods"', link: 'https://www.nashvillescene.com/news/citylimits/tree-ninja-cultivates-a-forest-in-nashville-s-neighborhoods/article_737ae7fc-fefd-11ed-a0ec-07bb4b1cdc5f.html', publication: 'Nashville Scene' }
       ],
       earlier: [
-        { text: '"The two young women behind Diversify Our Narrative"', publication: 'Ms. Magazine (print)', year: '2021' },
-        { text: '"What is a community fridge? How they work, explained."', link: 'https://www.vox.com/the-goods/22285863/community-fridges-neighborhoods-free-food', publication: 'Vox', year: '2021' },
-        { text: '"The best $96 I ever spent: A Keurig to show my mom I love her"', link: 'https://www.vox.com/the-goods/21443775/best-money-chinese-mom-i-love-you', publication: 'Vox', year: '2020' },
-        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times', year: '2020' },
-        { text: '"These Asian American Women Should be in Every History Book"', link: 'https://www.teenvogue.com/story/4-asian-american-women-who-changed-history', publication: 'Teen Vogue', year: '2020' },
-        { text: '"Meet the teen feminist leading the fight for young women\'s reproductive rights"', link: 'https://msmagazine.com/2019/07/25/fierce-teen-ally-leads-girls-of-color-in-fight-for-reproductive-rights/', publication: 'Ms. Magazine', year: '2019' }
+        { text: '"The two young women behind Diversify Our Narrative"', publication: 'Ms. Magazine (print)' },
+        { text: '"What is a community fridge? How they work, explained."', link: 'https://www.vox.com/the-goods/22285863/community-fridges-neighborhoods-free-food', publication: 'Vox'},
+        { text: '"The best $96 I ever spent: A Keurig to show my mom I love her"', link: 'https://www.vox.com/the-goods/21443775/best-money-chinese-mom-i-love-you', publication: 'Vox'},
+        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times' },
+        { text: '"These Asian American Women Should be in Every History Book"', link: 'https://www.teenvogue.com/story/4-asian-american-women-who-changed-history', publication: 'Teen Vogue'},
+        { text: '"Meet the teen feminist leading the fight for young women\'s reproductive rights"', link: 'https://msmagazine.com/2019/07/25/fierce-teen-ally-leads-girls-of-color-in-fight-for-reproductive-rights/', publication: 'Ms. Magazine' }
       ]
     },
     photography: {
