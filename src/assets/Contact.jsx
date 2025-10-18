@@ -60,10 +60,7 @@ export default function Contact() {
           justifyContent: 'center',
           alignItems: 'center'
         }}>
-          <a href="mailto:katherine.oung@gmail.com" onClick={(e) => {
-            e.preventDefault();
-            window.location.href = 'mailto:katherine.oung@gmail.com';
-            }} style={{
+          <a href="mailto:katherine.oung@gmail.com" style={{
             color: '#3E0230',
             textDecoration: 'none',
             fontSize: '16px',
