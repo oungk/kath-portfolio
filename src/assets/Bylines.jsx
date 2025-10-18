@@ -148,7 +148,7 @@ export default function Bylines() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
-              - <a href="https://www.nashvillescene.com/music/features/budge-hrtstrngs-nashville-music-interview/article_945c75aa-1a1b-11ef-8cb5-e32eafe41d6f.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Budge just wants to have fun"</a> <em>Nashville Scene</em> w/Ben Arthur            </li>
+              - <a href="https://www.nashvillescene.com/music/features/budge-hrtstrngs-nashville-music-interview/article_945c75aa-1a1b-11ef-8cb5-e32eafe41d6f.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Budge just wants to have fun"</a> <em>Nashville Scene</em></li>
             <li style={{
               fontSize: '16px',
               fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
@@ -284,7 +284,7 @@ export default function Bylines() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
-              - - <a href="https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Opinion | Coronavirus Racism Infected My High School"</a> <em>The New York Times</em> (2020)
+              - <a href="https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html" target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>"Opinion | Coronavirus Racism Infected My High School"</a> <em>The New York Times</em> (2020)
             </li>
             <li style={{
               fontSize: '16px',
