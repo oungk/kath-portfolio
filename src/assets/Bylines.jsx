@@ -196,8 +196,8 @@ export default function Bylines() {
         ))}
       </div>
 
-      {/* Mobile Responsive Styles */}
-      <style>{`
+           {/* Mobile Responsive Styles */}
+           <style>{`
         em {
             color: #3E0230 !important;
             font-style: italic;
@@ -218,9 +218,11 @@ export default function Bylines() {
             }
             .main-content-container {
             padding-left: 1rem !important;
+            padding-top: 1rem !important;
             }
             h1 {
-            font-size: 40px !important;
+            font-size: 45px !important;
+            margin-top: 0 !important;
             }
         }
       `}</style>

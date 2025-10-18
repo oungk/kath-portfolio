@@ -26,8 +26,8 @@ export default function Work() {
         <a href="#" style={{color: '#3E0230', textDecoration: 'none', fontWeight: 'normal'}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' })); }}>contact me</a>
       </nav>
 
-      {/* Main Content Container */}
-      <div style={{
+        {/* Main Content Container */}
+        <div className="main-content-container" style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
@@ -207,13 +207,16 @@ export default function Work() {
         </div>
       </div>
 
-      {/* Mobile Responsive Styles */}
-        <style>{`
+                       {/* Mobile Responsive Styles */}
+                       <style>{`
         em {
             color: #3E0230 !important;
             font-style: italic;
         }
         nav a {
+            color: #3E0230 !important;
+        }
+        .subtitle {
             color: #3E0230 !important;
         }
         @media (max-width: 767px) {
@@ -224,14 +227,16 @@ export default function Work() {
             justify-content: center !important;
             margin-bottom: 2rem !important;
             }
-            .main-content {
+            .main-content-container {
             padding-left: 1rem !important;
+            padding-top: 1rem !important;
             }
-            .main-title {
-            font-size: 40px !important;
+            h1 {
+            font-size: 45px !important;
+            margin-top: 0 !important;
             }
         }
-        `}</style>
+       `}</style>
     </div>
   );
 }
