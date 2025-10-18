@@ -228,7 +228,7 @@ export default function Work() {
             padding-left: 1rem !important;
             }
             .main-title {
-            font-size: 50px !important;
+            font-size: 40px !important;
             }
         }
         `}</style>
