@@ -82,7 +82,7 @@ export default function Work() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
-            games software engineering & data analytics @ <em>The New York Times</em> (current)
+            games software engineering + data analytics @ <em>The New York Times</em>
             </li>
             <li style={{
               fontSize: '16px',
