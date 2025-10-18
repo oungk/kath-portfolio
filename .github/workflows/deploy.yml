@@ -1,24 +1,25 @@
 name: Build and Deploy to GitHub Pages
 
-# Trigger workflow on push to main
+# Trigger on pushes to main
 on:
   push:
     branches:
-      - main  # source branch with your code
+      - main
 
+# Ensure the workflow can push to gh-pages
 permissions:
   contents: write
-  
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repo
-      - name: Checkout repository
+      # 1️⃣ Checkout the repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      # 2️⃣ Set up Node.js
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -28,14 +29,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣ Build the site
+      # 4️⃣ Build the project
       - name: Build project
         run: npm run build
 
-      # 5️⃣ Deploy to gh-pages
+      # 5️⃣ Optional: Force redeploy even if files didn't change
+      - name: Force redeploy
+        run: |
+          echo "redeploy $(date)" > .redeploy
+          git add .redeploy
+          git commit -m "Force Pages redeploy" || echo "No changes to commit"
+
+      # 6️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist       # your Vite output folder
-          force_orphan: true        # forces redeploy even if no changes
+          publish_dir: ./dist
+          force_orphan: true
