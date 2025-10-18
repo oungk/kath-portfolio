@@ -1,4 +1,4 @@
-# This porfolio is built with React, Vite, and lot's of love!
+# This porfolio is built with React, Vite, and lots of love!
 
 # React + Vite
 
