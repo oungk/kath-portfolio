@@ -57,7 +57,7 @@ export default function Bylines() {
         { text: '"Sham Jam 2025 Spotlight: McKay In-Studio"', link: 'https://wrvu.org/sham-jam-2025-spotlight-mckay-in-studio/', publication: 'WRVU' },
       ],
       2020: [
-        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times', year: '2020' },
+        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times'},
       ]
     },
     poetry: {
