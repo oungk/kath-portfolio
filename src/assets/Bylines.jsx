@@ -97,12 +97,12 @@ export default function Bylines() {
         <a href="#" style={{color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' })); }}>contact me</a>
       </nav>
 
-        {/* Main Content Container */}
-        <div className="main-content-container" style={{
+          {/* Main Content Container */}
+          <div className="main-content-container" style={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           minHeight: '100vh',
           maxWidth: '1200px',
           margin: '0 auto',

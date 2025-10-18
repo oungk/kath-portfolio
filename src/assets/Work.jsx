@@ -31,7 +31,7 @@ export default function Work() {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
       minHeight: '100vh',
       maxWidth: '1200px',
       margin: '0 auto',
