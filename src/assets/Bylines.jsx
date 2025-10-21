@@ -62,6 +62,8 @@ export default function Bylines() {
     },
     poetry: {
       2025: [
+        { text: '"THE BOYS"', publication: 'quarter notes magazine (forthcoming)' },
+        { text: '"American Water"', publication: 'quarter notes magazine (forthcoming)' },
         { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (forthcoming)' },
         { text: '"Hit and Run"', link: 'https://www.fourteenpoems.com/shop/issue-17', publication: 'fourteen poems (print)' },
         { text: '"PRAYER TO SAINT MICHAEL"', link: 'https://dishsoap-quarterly.com/5-20-25/prayer/', publication: 'Dishsoap Quarterly' },

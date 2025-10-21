@@ -85,7 +85,7 @@ export default function Home() {
         maxWidth: '400px',
         margin: 0
       }}>
-        is the Fall 2025 New York Times Interactive News Intern. They graduated
+        is the Fall 2025 <a href="https://www.nytimes.com/by/katherine-oung" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'underline'}}>New York Times</a> Interactive News Intern. They graduated
         from Vanderbilt University with a degree in Computer Science and Political
         Science. They enjoy coding, writing, and designing all variety of things.
         They hope you have a wonderful day.
