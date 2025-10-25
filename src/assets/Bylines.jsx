@@ -62,6 +62,9 @@ export default function Bylines() {
     },
     poetry: {
       2025: [
+        { text: '"you kept telling me the west isn\'t wild anymore"', publication: 'Foglifter Journal (forthcoming)' },
+        { text: '"It was summer and,"', publication: 'Foglifter Journal (forthcoming)' },
+        { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"THE BOYS"', publication: 'quarter notes magazine (forthcoming)' },
         { text: '"American Water"', publication: 'quarter notes magazine (forthcoming)' },
         { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (forthcoming)' },
