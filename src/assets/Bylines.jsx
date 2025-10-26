@@ -62,6 +62,7 @@ export default function Bylines() {
     },
     poetry: {
       2025: [
+        { text: '"Blood Moon"', publication: 'HAD (forthcoming)' },
         { text: '"you kept telling me the west isn\'t wild anymore"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"It was summer, and"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
