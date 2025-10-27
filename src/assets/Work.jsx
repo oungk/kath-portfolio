@@ -83,6 +83,15 @@ export default function Work() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
+            election analytics @ <em>The New York Times</em>
+            </li>
+            <li style={{
+              fontSize: '16px',
+              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+              color: '#3E0230',
+              fontWeight: 'normal',
+              marginBottom: '0.5rem'
+            }}>
             games software engineering + data analytics @ <em>The New York Times</em>
             </li>
             <li style={{
