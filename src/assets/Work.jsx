@@ -83,7 +83,7 @@ export default function Work() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
-            election analytics @ <em>The New York Times</em>
+            games software engineering + data analytics @ <em>The New York Times</em>
             </li>
             <li style={{
               fontSize: '16px',
@@ -92,7 +92,7 @@ export default function Work() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
-            games software engineering + data analytics @ <em>The New York Times</em>
+            election analytics @ <em>The New York Times</em>
             </li>
             <li style={{
               fontSize: '16px',
