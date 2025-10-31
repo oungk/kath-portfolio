@@ -62,13 +62,13 @@ export default function Bylines() {
     },
     poetry: {
       2025: [
-        { text: '"Blood Moon"', publication: 'HAD (forthcoming)' },
+        { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (forthcoming)' },
         { text: '"you kept telling me the west isn\'t wild anymore"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"It was summer, and"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"THE BOYS"', publication: 'quarter notes magazine (forthcoming)' },
         { text: '"American Water"', publication: 'quarter notes magazine (forthcoming)' },
-        { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (forthcoming)' },
+        { text: '"Blood Moon"', publication: 'HAD', link: 'https://www.havehashad.com/hadposts/blood-moon'},
         { text: '"Hit and Run"', link: 'https://www.fourteenpoems.com/shop/issue-17', publication: 'fourteen poems (print)' },
         { text: '"PRAYER TO SAINT MICHAEL"', link: 'https://dishsoap-quarterly.com/5-20-25/prayer/', publication: 'Dishsoap Quarterly' },
         { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://sinetheta.net/34.html',publication: 'Sine Theta Magazine (print)' }
