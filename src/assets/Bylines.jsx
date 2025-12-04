@@ -7,6 +7,7 @@ export default function Bylines() {
   const contentByCategory = {
     journalism: {
       2025: [
+        { text: '"Tennessee Seventh District Special Election Results"', link: 'https://www.nytimes.com/interactive/2025/12/02/us/elections/results-tennessee-us-house-7-special.html', publication: 'The New York Times' },
         { text: '"New York City Mayoral Election Results"', link: 'https://www.nytimes.com/interactive/2025/11/04/us/elections/results-new-york-city-mayor.html', publication: 'The New York Times' },
         { text: '"An Extremely Detailed Map of the 2024 Election"', link: 'https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html?unlocked_article_code=1.uU8.dpPv._nJFbFUWhO8O&smid=url-share', publication: 'The New York Times' },
         { text: '"Country Almanac: Artists to Watch"', link: 'https://www.nashvillescene.com/music/coverstory/nashville-scene-country-almanac-artists-watch-wyatt-flores/article_c1eb8f7a-d2ac-11ef-927b-cf3f88063466.html', publication: 'Nashville Scene' }
