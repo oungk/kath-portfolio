@@ -64,10 +64,12 @@ export default function Bylines() {
     },
     poetry: {
       2025: [
-        { text: '"Indictment"', publication: 'Glass: A Journal of Poetry (forthcoming)' },
+
         { text: '"you kept telling me the west isn\'t wild anymore"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"It was summer, and"', publication: 'Foglifter Journal (forthcoming)' },
+  
         { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
+        { text: '"Indictment"', publication: 'Glass: A Journal of Poetry', link: 'https://www.glass-poetry.com/journal/2025/december/oung-indictment.html' },
         { text: '"THE BOYS"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
         { text: '"American Water"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
         { text: '"Blood Moon"', publication: 'HAD', link: 'https://www.havehashad.com/hadposts/blood-moon'},
