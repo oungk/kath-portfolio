@@ -74,7 +74,7 @@ export default function Work() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
-              property tax data reporting @ <em>The Houston Chronicle</em> (upcoming)
+              property tax data reporting @ <em>Houston Chronicle</em> (upcoming)
             </li>
             <li style={{
               fontSize: '16px',
