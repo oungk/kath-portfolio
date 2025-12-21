@@ -74,6 +74,15 @@ export default function Work() {
               fontWeight: 'normal',
               marginBottom: '0.5rem'
             }}>
+              property tax data journalism @ <em>The Houston Chronicle</em> (upcoming)
+            </li>
+            <li style={{
+              fontSize: '16px',
+              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+              color: '#3E0230',
+              fontWeight: 'normal',
+              marginBottom: '0.5rem'
+            }}>
               interactive news technology @ <em>The New York Times</em> (current)
             </li>
             <li style={{
