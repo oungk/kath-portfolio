@@ -7,6 +7,8 @@ export default function Bylines() {
   const contentByCategory = {
     journalism: {
       2025: [
+        { text: '"Year in Music 2025: Top Local Albums Critics’ Poll (Snõõper)"', link: 'https://www.nashvillescene.com/music/coverstory/nashville-scene-critics-top-albums-2025/article_d156b79d-fa86-4e7e-8568-423580410eb2.html', publication: 'Nashville Scene' },
+        { text: '"William Tyler Gathers a Wealth of Friends at The Blue Room"', link: 'https://www.nashvillescene.com/music/thespin/william-tyler-friends-show-review-nashville-blue-room/article_35de391f-0db7-4e35-ae01-f3b59bba7a85.html', publication: 'Nashville Scene' },
         { text: '"Tennessee Seventh District Special Election Results"', link: 'https://www.nytimes.com/interactive/2025/12/02/us/elections/results-tennessee-us-house-7-special.html', publication: 'The New York Times' },
         { text: '"New York City Mayoral Election Results"', link: 'https://www.nytimes.com/interactive/2025/11/04/us/elections/results-new-york-city-mayor.html', publication: 'The New York Times' },
         { text: '"An Extremely Detailed Map of the 2024 Election"', link: 'https://www.nytimes.com/interactive/2025/us/elections/2024-election-map-precinct-results.html?unlocked_article_code=1.uU8.dpPv._nJFbFUWhO8O&smid=url-share', publication: 'The New York Times' },
