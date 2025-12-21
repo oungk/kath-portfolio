@@ -69,6 +69,8 @@ export default function Bylines() {
         { text: '"It was summer, and"', publication: 'Foglifter Journal (forthcoming)' },
   
         { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
+        { text: '"Free Association"', publication: 'Jack (print)', link: 'https://www.jack.uni-freiburg.de/' },
+        { text: '"Dancing at the End of the World"', publication: 'Jack (print)', link: 'https://www.jack.uni-freiburg.de/' },
         { text: '"Indictment"', publication: 'Glass: A Journal of Poetry', link: 'https://www.glass-poetry.com/journal/2025/december/oung-indictment.html' },
         { text: '"THE BOYS"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
         { text: '"American Water"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
