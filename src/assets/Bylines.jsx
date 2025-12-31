@@ -65,12 +65,12 @@ export default function Bylines() {
       ]
     },
     poetry: {
-      2025: [
-
+      2026: [
         { text: '"you kept telling me the west isn\'t wild anymore"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"It was summer, and"', publication: 'Foglifter Journal (forthcoming)' },
-  
         { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
+      ],
+      2025: [
         { text: '"Free Association"', publication: 'Jack (print)', link: 'https://www.jack.uni-freiburg.de/' },
         { text: '"Dancing at the End of the World"', publication: 'Jack (print)', link: 'https://www.jack.uni-freiburg.de/' },
         { text: '"Indictment"', publication: 'Glass: A Journal of Poetry', link: 'https://www.glass-poetry.com/journal/2025/december/oung-indictment.html' },
