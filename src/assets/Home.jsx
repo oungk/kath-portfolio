@@ -85,7 +85,7 @@ export default function Home() {
         maxWidth: '400px',
         margin: 0
       }}>
-        is a data reporter at the Houston Chronicle. Katherine previously interned on the Interactive News team at the New York Times. They enjoy coding, writing, and designing all variety of things. They hope you have a wonderful day.
+        is a data reporter at the <em>Houston Chronicle</em>. Katherine previously interned on the Interactive News team at the <em>New York Times</em>. They enjoy coding, writing, and designing all variety of things. They hope you have a wonderful day.
       </p>
 
       {/* Decorative bottom text */}
