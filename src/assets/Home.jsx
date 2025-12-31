@@ -85,7 +85,7 @@ export default function Home() {
         maxWidth: '400px',
         margin: 0
       }}>
-        is a data reporter at the Houston Chronicle. They previously interned on the Interactive News team at the New York Times. They graduated from Vanderbilt University with a degree in Computer Science and Political Science. They enjoy coding, writing, and designing all variety of things. They hope you have a wonderful day.
+        is a data reporter at the Houston Chronicle. Katherine previously interned on the Interactive News team at the New York Times. They enjoy coding, writing, and designing all variety of things. They hope you have a wonderful day.
       </p>
 
       {/* Decorative bottom text */}
