@@ -8,7 +8,7 @@ export default function Bylines() {
     journalism: {
       2026: [
         { text: '"List of Lists 2025"', link: 'https://nobells.blog/the-list-of-lists-2025', publication: 'No Bells Magazine' },
-      ]
+      ],
       2025: [
         { text: '"Year in Music 2025: Top Local Albums Critics’ Poll (Snõõper)"', link: 'https://www.nashvillescene.com/music/coverstory/nashville-scene-critics-top-albums-2025/article_d156b79d-fa86-4e7e-8568-423580410eb2.html', publication: 'Nashville Scene' },
         { text: '"William Tyler Gathers a Wealth of Friends at The Blue Room"', link: 'https://www.nashvillescene.com/music/thespin/william-tyler-friends-show-review-nashville-blue-room/article_35de391f-0db7-4e35-ae01-f3b59bba7a85.html', publication: 'Nashville Scene' },
