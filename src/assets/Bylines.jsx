@@ -74,15 +74,15 @@ export default function Bylines() {
         { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
       ],
       2025: [
-        { text: '"Free Association"', publication: 'Jack (print)', link: 'https://www.jack.uni-freiburg.de/' },
-        { text: '"Dancing at the End of the World"', publication: 'Jack (print)', link: 'https://www.jack.uni-freiburg.de/' },
+        { text: '"Free Association"', publication: 'Jack (print)', link: 'https://drive.google.com/file/d/17gHkAW51KPclow48j39nNpXyQMh3pYfc/view?usp=sharing' },
+        { text: '"Dancing at the End of the World"', publication: 'Jack (print)', link: 'https://drive.google.com/file/d/1k5-6Tp-FRHsXsJltbfhJWmCbrO7c8kKn/view?usp=sharing' },
         { text: '"Indictment"', publication: 'Glass: A Journal of Poetry', link: 'https://www.glass-poetry.com/journal/2025/december/oung-indictment.html' },
         { text: '"THE BOYS"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
         { text: '"American Water"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
         { text: '"Blood Moon"', publication: 'HAD', link: 'https://www.havehashad.com/hadposts/blood-moon'},
-        { text: '"Hit and Run"', link: 'https://www.fourteenpoems.com/shop/issue-17', publication: 'fourteen poems (print)' },
+        { text: '"Hit and Run"', link: 'https://drive.google.com/file/d/14CH9uFwwbo-Apa1v6Fo26IZP4pgayjPI/view?usp=sharing', publication: 'fourteen poems (print)' },
         { text: '"PRAYER TO SAINT MICHAEL"', link: 'https://dishsoap-quarterly.com/5-20-25/prayer/', publication: 'Dishsoap Quarterly' },
-        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://sinetheta.net/34.html',publication: 'Sine Theta Magazine (print)' }
+        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://drive.google.com/file/d/1PQL9BOogPKRoqJiildVLyu49Z7bYbcv0/view?usp=sharing',publication: 'Sine Theta Magazine (print)' }
       ]
     }
   };
