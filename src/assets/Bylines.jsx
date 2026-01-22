@@ -7,6 +7,7 @@ export default function Bylines() {
   const contentByCategory = {
     journalism: {
       2026: [
+        { text: '"2026 Poll Tracker"', link: 'https://www.nytimes.com/interactive/polls/arizona-governor-election-polls-2026.html', publication: 'The New York Times' },
         { text: '"List of Lists 2025"', link: 'https://nobells.blog/the-list-of-lists-2025', publication: 'No Bells Magazine' },
       ],
       2025: [
@@ -34,10 +35,10 @@ export default function Bylines() {
       ],
       earlier: [
         { text: '"The two young women behind Diversify Our Narrative"', link: 'https://oungk.github.io/kath-portfolio/ms-magazine-1.pdf', publication: 'Ms. Magazine (print)' },
-        { text: '"What is a community fridge? How they work, explained."', link: 'https://www.vox.com/the-goods/22285863/community-fridges-neighborhoods-free-food', publication: 'Vox'},
-        { text: '"The best $96 I ever spent: A Keurig to show my mom I love her"', link: 'https://www.vox.com/the-goods/21443775/best-money-chinese-mom-i-love-you', publication: 'Vox'},
+        { text: '"What is a community fridge? How they work, explained."', link: 'https://www.vox.com/the-goods/22285863/community-fridges-neighborhoods-free-food', publication: 'Vox' },
+        { text: '"The best $96 I ever spent: A Keurig to show my mom I love her"', link: 'https://www.vox.com/the-goods/21443775/best-money-chinese-mom-i-love-you', publication: 'Vox' },
         { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times' },
-        { text: '"These Asian American Women Should be in Every History Book"', link: 'https://www.teenvogue.com/story/4-asian-american-women-who-changed-history', publication: 'Teen Vogue'},
+        { text: '"These Asian American Women Should be in Every History Book"', link: 'https://www.teenvogue.com/story/4-asian-american-women-who-changed-history', publication: 'Teen Vogue' },
         { text: '"Meet the teen feminist leading the fight for young women\'s reproductive rights"', link: 'https://msmagazine.com/2019/07/25/fierce-teen-ally-leads-girls-of-color-in-fight-for-reproductive-rights/', publication: 'Ms. Magazine' }
       ]
     },
@@ -45,10 +46,10 @@ export default function Bylines() {
       2024: [
         { text: '"Snõõper\'s convergence of puppets and punk"', link: 'https://nobells.blog/snooper-band-interview/', publication: 'No Bells Magazine' },
         { text: '"IN PHOTOS: Ryan Beatty takes it slow at the Basement East"', link: 'https://vanderbilthustler.com/2024/02/23/in-photos-ryan-beatty-takes-it-slow-at-the-basement-east/', publication: 'The Vanderbilt Hustler' },
-        { text: '"Waxahatchee\'s meditative nostalgia"', link:'https://vanderbilthustler.com/2024/05/08/waxahatchees-meditative-nostalgia/#', publication: 'The Vanderbilt Hustler' },
+        { text: '"Waxahatchee\'s meditative nostalgia"', link: 'https://vanderbilthustler.com/2024/05/08/waxahatchees-meditative-nostalgia/#', publication: 'The Vanderbilt Hustler' },
       ],
       2023: [
-        { text: '"Mother Cain embraces her found family at The Basement East"', link: 'https://vanderbilthustler.com/2022/09/12/mother-cain-embraces-her-found-family-at-the-basement-east/#',publication: 'The Vanderbilt Hustler' }
+        { text: '"Mother Cain embraces her found family at The Basement East"', link: 'https://vanderbilthustler.com/2022/09/12/mother-cain-embraces-her-found-family-at-the-basement-east/#', publication: 'The Vanderbilt Hustler' }
       ]
     },
     audio: {
@@ -64,11 +65,13 @@ export default function Bylines() {
         { text: '"Sham Jam 2025 Spotlight: McKay In-Studio"', link: 'https://wrvu.org/sham-jam-2025-spotlight-mckay-in-studio/', publication: 'WRVU' },
       ],
       2020: [
-        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times'},
+        { text: '"Opinion | Coronavirus Racism Infected My High School"', link: 'https://www.nytimes.com/2020/03/14/opinion/Racism-coronavirus-asians.html', publication: 'The New York Times' },
       ]
     },
     poetry: {
       2026: [
+        { text: '"WHAT YOU LOVE IS YOUR FATE"', publication: 'Indianapolis Review (forthcoming)' },
+        { text: '"Love Poem With and Without"', publication: 'Indianapolis Review (forthcoming)' },
         { text: '"you kept telling me the west isn\'t wild anymore"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"It was summer, and"', publication: 'Foglifter Journal (forthcoming)' },
         { text: '"Summer Camp"', publication: 'Foglifter Journal (forthcoming)' },
@@ -79,10 +82,10 @@ export default function Bylines() {
         { text: '"Indictment"', publication: 'Glass: A Journal of Poetry', link: 'https://www.glass-poetry.com/journal/2025/december/oung-indictment.html' },
         { text: '"THE BOYS"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
         { text: '"American Water"', publication: 'quarter notes magazine', link: "https://quarternotesmag.com/oung/" },
-        { text: '"Blood Moon"', publication: 'HAD', link: 'https://www.havehashad.com/hadposts/blood-moon'},
+        { text: '"Blood Moon"', publication: 'HAD', link: 'https://www.havehashad.com/hadposts/blood-moon' },
         { text: '"Hit and Run"', link: 'https://drive.google.com/file/d/14CH9uFwwbo-Apa1v6Fo26IZP4pgayjPI/view?usp=sharing', publication: 'fourteen poems (print)' },
         { text: '"PRAYER TO SAINT MICHAEL"', link: 'https://dishsoap-quarterly.com/5-20-25/prayer/', publication: 'Dishsoap Quarterly' },
-        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://drive.google.com/file/d/1PQL9BOogPKRoqJiildVLyu49Z7bYbcv0/view?usp=sharing',publication: 'Sine Theta Magazine (print)' }
+        { text: '"DURING OUR SIXTH GRADE HISTORY UNIT ON THE COLD WAR,"', link: 'https://drive.google.com/file/d/1PQL9BOogPKRoqJiildVLyu49Z7bYbcv0/view?usp=sharing', publication: 'Sine Theta Magazine (print)' }
       ]
     }
   };
@@ -109,24 +112,24 @@ export default function Bylines() {
         fontSize: '16px',
         zIndex: 10
       }}>
-        <a href="#" style={{color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'home' })); }}>home</a>
-        <a href="#" style={{color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'work' })); }}>work</a>
-        <a href="#" style={{color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'bold', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'bold'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'bylines' })); }}>bylines</a>
-        <a href="#" style={{color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace"}} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' })); }}>contact me</a>
+        <a href="#" style={{ color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace" }} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'home' })); }}>home</a>
+        <a href="#" style={{ color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace" }} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'work' })); }}>work</a>
+        <a href="#" style={{ color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'bold', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace" }} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'bold'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'bylines' })); }}>bylines</a>
+        <a href="#" style={{ color: '#3E0230 !important', textDecoration: 'none', fontWeight: 'normal', fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace" }} onMouseOver={(e) => e.target.style.fontWeight = 'bold'} onMouseOut={(e) => e.target.style.fontWeight = 'normal'} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('navigate', { detail: 'contact' })); }}>contact me</a>
       </nav>
 
-          {/* Main Content Container */}
-          <div className="main-content-container" style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          justifyContent: 'flex-start',
-          minHeight: '100vh',
-          maxWidth: '1200px',
-          margin: '0 auto',
-          padding: '0 1rem',
-          paddingLeft: '4rem',
-          paddingTop: '4rem'
+      {/* Main Content Container */}
+      <div className="main-content-container" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        minHeight: '100vh',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '0 1rem',
+        paddingLeft: '4rem',
+        paddingTop: '4rem'
       }}>
         {/* Main Title */}
         <h1 style={{
@@ -142,30 +145,30 @@ export default function Bylines() {
 
         {/* Clickable Category Filters */}
         <div style={{
-           fontSize: '16px',
-           fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-           color: '#3E0230',
-           fontWeight: 'normal',
-           marginBottom: '3rem'
-         }}>
-           {categories.map((category) => (
-             <React.Fragment key={category}>
-               <span 
-                 style={{
-                   cursor: 'pointer',
-                   fontWeight: selectedCategory === category ? 'bold' : 'normal',
-                   textDecoration: 'none',
-                   color: '#3E0230'
-                 }}
-                 onClick={() => setSelectedCategory(category)}
-                 onMouseOver={(e) => e.target.style.fontWeight = 'bold'}
-                 onMouseOut={(e) => e.target.style.fontWeight = selectedCategory === category ? 'bold' : 'normal'}
-               >
-                 ✶ {category + ' '} 
-               </span>
-             </React.Fragment>
-           ))}
-         </div>
+          fontSize: '16px',
+          fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+          color: '#3E0230',
+          fontWeight: 'normal',
+          marginBottom: '3rem'
+        }}>
+          {categories.map((category) => (
+            <React.Fragment key={category}>
+              <span
+                style={{
+                  cursor: 'pointer',
+                  fontWeight: selectedCategory === category ? 'bold' : 'normal',
+                  textDecoration: 'none',
+                  color: '#3E0230'
+                }}
+                onClick={() => setSelectedCategory(category)}
+                onMouseOver={(e) => e.target.style.fontWeight = 'bold'}
+                onMouseOut={(e) => e.target.style.fontWeight = selectedCategory === category ? 'bold' : 'normal'}
+              >
+                ✶ {category + ' '}
+              </span>
+            </React.Fragment>
+          ))}
+        </div>
 
         {/* Render content based on selected category */}
         {Object.entries(currentContent)
@@ -176,46 +179,46 @@ export default function Bylines() {
             return parseInt(b) - parseInt(a);
           })
           .map(([year, items]) => (
-          <div key={year} style={{ marginBottom: '2rem' }}>
-            <h2 style={{
-              fontSize: '16px',
-              fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-              color: '#3E0230',
-              fontWeight: 'bold',
-              margin: '0 0 1rem 0'
-            }}>
-              {year}
-            </h2>
-            <ul style={{
-              listStyle: 'none',
-              padding: 0,
-              margin: 0
-            }}>
-              {items.map((item, index) => (
-                <li key={index} style={{
-                  fontSize: '16px',
-                  fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
-                  color: '#3E0230',
-                  fontWeight: 'normal',
-                  marginBottom: '0.5rem'
-                }}>
-                  - {item.link ? (
-                    <a href={item.link} target="_blank" rel="noopener noreferrer" style={{color: '#3E0230', textDecoration: 'underline'}}>
-                      {item.text}
-                    </a>
-                  ) : (
-                    item.text
-                  )} <em>{item.publication}</em>
-                  {item.year && ` (${item.year})`}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+            <div key={year} style={{ marginBottom: '2rem' }}>
+              <h2 style={{
+                fontSize: '16px',
+                fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+                color: '#3E0230',
+                fontWeight: 'bold',
+                margin: '0 0 1rem 0'
+              }}>
+                {year}
+              </h2>
+              <ul style={{
+                listStyle: 'none',
+                padding: 0,
+                margin: 0
+              }}>
+                {items.map((item, index) => (
+                  <li key={index} style={{
+                    fontSize: '16px',
+                    fontFamily: "'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace",
+                    color: '#3E0230',
+                    fontWeight: 'normal',
+                    marginBottom: '0.5rem'
+                  }}>
+                    - {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" style={{ color: '#3E0230', textDecoration: 'underline' }}>
+                        {item.text}
+                      </a>
+                    ) : (
+                      item.text
+                    )} <em>{item.publication}</em>
+                    {item.year && ` (${item.year})`}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
       </div>
 
-           {/* Mobile Responsive Styles */}
-           <style>{`
+      {/* Mobile Responsive Styles */}
+      <style>{`
         em {
             color: #3E0230 !important;
             font-style: italic;
