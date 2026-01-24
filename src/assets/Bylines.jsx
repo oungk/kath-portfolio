@@ -7,7 +7,8 @@ export default function Bylines() {
   const contentByCategory = {
     journalism: {
       2026: [
-        { text: '"2026 Poll Tracker"', link: 'https://www.nytimes.com/interactive/polls/arizona-governor-election-polls-2026.html', publication: 'The New York Times' },
+        { text: '"An Interview With Zach Tittel of Zook"', link: 'https://actioncatzine.com/2026/01/23/an-interview-with-zach-tittel-of-zook/', publication: 'Action Cat Zine' },
+        { text: '"2026 Poll Trackers"', link: 'https://www.nytimes.com/interactive/polls/arizona-governor-election-polls-2026.html', publication: 'The New York Times' },
         { text: '"List of Lists 2025"', link: 'https://nobells.blog/the-list-of-lists-2025', publication: 'No Bells Magazine' },
       ],
       2025: [
