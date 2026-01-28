@@ -91,7 +91,7 @@ export default function Bylines() {
     },
   };
 
-  const categories = ['journalism', 'photography', 'audio', 'video', 'poetry'];
+  const categories = ['journalism', 'poetry','photography', 'audio', 'video'];
   const currentContent = contentByCategory[selectedCategory] || {};
 
   return (
