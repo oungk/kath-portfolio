@@ -45,6 +45,8 @@ export default function Bylines() {
     },
     poetry: {
       2026: [
+        { text: '"Strange Configurations"', publication: 'Swamp Ape Magazine (forthcoming)' },
+        { text: '"No Consolation"', publication: 'Swamp Ape Magazine (forthcoming)' },
         { text: '"WHAT YOU LOVE IS YOUR FATE"', publication: 'Indianapolis Review (forthcoming)' },
         { text: '"Love Poem With and Without"', publication: 'Indianapolis Review (forthcoming)' },
         { text: '"you kept telling me the west isn\'t wild anymore"', publication: 'Foglifter Journal (forthcoming)' },
